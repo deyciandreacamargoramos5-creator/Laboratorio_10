@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 a:visited{
     color:aquamarine;
@@ -41,11 +41,168 @@ nav a:hover{
     transform: scale(1.05);
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
 }
-container{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap:30px;
+.Bienvenida {
+    background-color: rgb(53, 53, 54);
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+.Bienvenida::before {
+    position: absolute;
+    background-size: cover;
+}
+.Bienvenida main {
+    width: 100%;
     max-width: 1200px;
-    margin:0 auto;
-    padding: 0 20px 40px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.Bienvenida section {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    box-shadow:20px 60px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.Bienvenida h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, black, rgb(26, 19, 36));
+    background-clip: text;
+}
+.Bienvenida p {
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Bienvenida img {
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.tarjeta {
+    background: black;
+    color: white;
+    border-radius: 15px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+.tarjeta::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+}
+.tarjeta h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.tarjeta article {
+    margin-top: 1rem;
+}
+.tarjeta p {
+    color: white;
+    line-height: 1.7;
+    text-align: justify;
+    font-size: 1rem;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: column;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.tarjeta img{
+    max-width: 1000px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+main {
+  background-color: rgb(53, 53, 54);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 80vh;
+  width: 100%;
+  padding: 40px 20px
+}
+form {
+  background: #fff;
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+form label {
+  font-weight: 600;
+  color: #333;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1em;
+}
+form button {
+  background: black;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 10px;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 0;
+    border-top: 4px solid black;
+}
+footer p {
+    font-size: 1rem;
+    color: #ecf0f1;
 }
